@@ -9,13 +9,6 @@ router.get('/', function (req, res, next) {
   res.render('index');
 });
 
-router.get('/hello', (req, res) => {
-  res.render('hello');
-});
-router.get('/search', (req, res) => {
-  res.render('search');
-});
-
 router.post('/searchList', (req, res) => {
   res.send(req.body);
 });
@@ -24,11 +17,11 @@ router.post('/check-login', (req, res) => {
   var pass = req.body.password;
   if(user == '123' && pass == '456')
   {
-    res.render('index');
+    res.redirect('/');
   }
   else
   {
-    res.render('index');
+    res.redirect('/');
   }
 });
 router.get('/todos', todoController.getAll);

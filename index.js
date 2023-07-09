@@ -25,7 +25,7 @@ app.use(session({
     secret: 'mySecret',
     name: 'user',
     resave: true,
-    saveUninitialized: false, // not stored in store and cookie if not logged in yet
+    saveUninitialized: false,
     // cookie: { maxAge: 600000 }
 }))
 
