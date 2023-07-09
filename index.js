@@ -7,8 +7,6 @@ const express = require('express');
 var engine = require('ejs-locals');
 const session = require('express-session')
 
-
-
 const app = express();
 const port = process.env.PORT;
 const App_debug = process.env.APP_DEBUG==='true'?true:false;
