@@ -17,7 +17,7 @@ router.post('/check-login', (req, res) => {
   var pass = req.body.password;
   if(user == '123' && pass == '456')
   {
-    res.redirect('/');
+    res.redirect('/pass');
   }
   else
   {
